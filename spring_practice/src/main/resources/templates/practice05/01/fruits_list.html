@@ -17,10 +17,10 @@
 <td>名前</td>
 <td>旬の季節(○月、通年:13)</td>
 </tr>
-<tr th:each="fruit:${'TODO'}">
-<td th:text="${'TODO'}"></td>
-<td th:text="${'TODO'}"></td>
-<td th:text="${'TODO'}"></td>
+<tr th:each="fruit:${fruits_season}">
+<td th:text="${fruit.fruitId}"></td>
+<td th:text="${fruit.fruitName}"></td>
+<td th:text="${fruit.seasonMonth}"></td>
 </tr>
 </table>
 </p>
