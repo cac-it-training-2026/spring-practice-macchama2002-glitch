@@ -9,9 +9,9 @@
 
 <p>
 <h4>数あてゲーム</h4>
-<form th:action="@{'TODO'}">
+<form th:action="@{/numguess/judge}"method="get">
 1～9の数値を入力してください。<br>
-<input type="number" name="'TODO'" /><br>
+<input type="number" name="inputNum" /><br>
 <input type="submit" value="判定" />
 </form>
 </p>
