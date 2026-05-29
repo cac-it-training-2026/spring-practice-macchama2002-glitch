@@ -16,9 +16,9 @@
 <td>ID</td>
 <td>名前</td>
 </tr>
-<tr th:each="fruit:${'TODO'}">
-<td th:text="${'TODO'}"></td>
-<td><a th:href="@{'TODO'}" th:text="${'TODO'}"></a></td>
+<tr th:each="fruit:${fruits}">
+<td th:text="${fruit.fruitId}"></td>
+<td><a th:href="@{/fruits/detail/}+${fruit.fruitId}" th:text="${fruit.fruitName}"></a></td>
 
 </tr>
 </table>

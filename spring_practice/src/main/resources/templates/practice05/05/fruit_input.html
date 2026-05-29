@@ -11,14 +11,14 @@
 <hr>
 <p>
 <h4>果物情報 登録</h4>
-<form th:action="@{'TODO'}" method="'TODO'">
+<form th:action="@{/fruits/add/complete}" method="post">
 <table>
 <tr>
-<td>フルーツ名</td><td><input type="text" name="'TODO'"/></td>
+<td>フルーツ名</td><td><input type="text" name="fruitName"/></td>
 </tr>
 <tr>
 <td>旬の季節</td>
-<td><select name="'TODO'">
+<td><select name="seasonMonth">
 <option value="1">1月</option>
 <option value="2">2月</option>
 <option value="3">3月</option>

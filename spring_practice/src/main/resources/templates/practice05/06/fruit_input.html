@@ -11,17 +11,17 @@
 <hr>
 <p>
 <h4>果物情報  更新</h4>
-<form th:action="@{'TODO'}" method="'TODO'">
+<form th:action="@{/fruits/update/complete/{fruitId}(fruitId=${fruit.fruitId})}" method="post">
 <table>
 <tr>
-<td>ID</td><td th:text="${'TODO'}"></td>
+<td>ID</td><td th:text="${fruit.fruitId}"></td>
 </tr>
 <tr>
-<td>フルーツ名</td><td><input type="text" name="'TODO'" th:value="${'TODO'}"/></td>
+<td>フルーツ名</td><td><input type="text" name="fruitName" th:value="${fruit.fruitName}"/></td>
 </tr>
 <tr>
 <td>旬の季節</td>
-<td><select name="'TODO'">
+<td><select name="seasonMonth">
 <option value="1">1月</option>
 <option value="2">2月</option>
 <option value="3">3月</option>
