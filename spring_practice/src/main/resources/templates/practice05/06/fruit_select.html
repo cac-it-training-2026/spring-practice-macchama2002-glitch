@@ -11,12 +11,12 @@
 <hr>
 <p>
 <h4>果物情報 更新対象のフルーツ名を選んでください。</h4>
-<form th:action="@{'TODO'}" method="'TODO'">
+<form th:action="@{/fruits/update/input}" method="post">
 <table>
 <tr>
 <td>フルーツ名</td>
-<td><select name="'TODO'">
-<option th:each="fruit:${'TODO'}" th:value="${'TODO'}" th:text="${'TODO'}"></option>
+<td><select name="fruitId">
+<option th:each="fruit:${fruits}" th:value="${fruit.fruitId}" th:text="${fruit.fruitName}"></option>
 </select>
 </td>
 </tr>

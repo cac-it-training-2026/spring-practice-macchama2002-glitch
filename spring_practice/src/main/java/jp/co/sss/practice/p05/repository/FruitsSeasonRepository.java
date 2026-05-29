@@ -11,4 +11,6 @@ public interface FruitsSeasonRepository extends JpaRepository<FruitsSeason, Inte
 
 	List<FruitsSeason> findAllByOrderByFruitIdAsc();
 
+	List<FruitsSeason> findBySeasonMonthOrderByFruitIdAsc(Integer seasonMonth);
+
 }
